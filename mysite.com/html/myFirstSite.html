@@ -6,8 +6,28 @@
 		<title>My Tutorials</title>
 		<!-- SEO - search engine optimization -->
 		<!-- this is a comment - just to tell develop what is all about -->
+
 	</head>
 	<body>
+		<style>
+			table,
+			tr,
+			td,
+			th {
+				border: 1px solid blue;
+			}
+			
+			td {
+				text-align: center;
+			}
+			
+			table {
+				border-collapse: collapse;
+				width: 50%;
+			}
+		
+		</style>
+		
 		<h1>My First Website</h1>
 		<h2>heading 2 </h2>
 		<h3>heading 3 </h3>
@@ -120,6 +140,140 @@
 		</ol>
 		
 		
+		<h1>Tables - Contacts</h1>
+		
+		<table>
+		  <thead>
+			<tr>
+				<th>Name</th>
+				<th>Age</th>
+				<th>Address</th>
+				<th>Phone number</th>
+				<th>Email </th>
+			</tr>
+		  <thead>
+		  <tbody>
+			<tr>
+				<td>Govardhan</td>
+				<td>28</td>
+				<td>my adderss</td>
+				<td>6361798441</td>
+				<td>kgovardhan0409@gmail.com</td>
+			</tr>
+			<tr>
+				<td>Govardhan</td>
+				<td>28</td>
+				<td>my adderss</td>
+				<td>6361798441</td>
+				<td>kgovardhan0409@gmail.com</td>
+			</tr>
+			<tr>
+				<td>Govardhan</td>
+				<td>28</td>
+				<td>my adderss</td>
+				<td>6361798441</td>
+				<td>kgovardhan0409@gmail.com</td>
+			</tr>
+			<tr>
+				<td>Govardhan</td>
+				<td>28</td>
+				<td>my adderss</td>
+				<td>6361798441</td>
+				<td>kgovardhan0409@gmail.com</td>
+			</tr>
+		 </tbody>
+		</table>
+		
+		
+		<h1>Tables - colspan</h1>
+		
+		<table>
+
+			<tr>
+				<th colspan="2">Name</th>
+				<th>Age</th>
+				<th>Address</th>
+				<th>Phone number</th>
+				<th>Email </th>
+			</tr>
+
+			<tr>
+				<td>Govardhan</td>
+				<td>Kurakula</td>
+				<td>28</td>
+				<td>my adderss</td>
+				<td>6361798441</td>
+				<td>kgovardhan0409@gmail.com</td>
+			</tr>
+			<tr>
+				<td>Govardhan</td>
+				<td>Kurakula</td>
+				<td>28</td>
+				<td>my adderss</td>
+				<td>6361798441</td>
+				<td>kgovardhan0409@gmail.com</td>
+			</tr>
+			<tr>
+				<td>Govardhan</td>
+				<td>Kurakula</td>
+				<td>28</td>
+				<td>my adderss</td>
+				<td>6361798441</td>
+				<td>kgovardhan0409@gmail.com</td>
+			</tr>
+			<tr>
+				<td>Govardhan</td>
+				<td>Kurakula</td>
+				<td>28</td>
+				<td>my adderss</td>
+				<td>6361798441</td>
+				<td>kgovardhan0409@gmail.com</td>
+			</tr>
+
+		</table>
+		
+		
+		
+			<h1>Tables - row span</h1>
+		
+		<table>
+
+			<tr>
+				<th rowspan="3">head1 & head 2 & head 3</th>
+				<td>data</td>
+				<td>data</td>
+			</tr>
+
+			<tr>
+				<!-- <th>head2</td> -->
+				<td>data</td>
+				<td>data</td>
+			</tr>
+			<tr>
+				<!-- <th>head3</th> -->
+				<td>data</td>
+				<td>data</td>
+			</tr>
+
+		</table>
+		
+		<h1>Forms</h1>
+		<form>
+			<label>User Name:</label>
+			<input type="text">
+			<hr>
+			
+			<label>Choose Gender</lable>
+			
+			<label>Male</lable>
+			<input type="radio" name="gender">
+			
+			<label>Female</label>
+			<input type="radio" name="gender">
+			
+		</form>
+		
+		
 	</body>
 </html>
 
@@ -154,7 +308,7 @@ ex. <h1> some heading </h1>
    remainng All elements have colsing tag.
    
    Two types of elements.
-      1. inline elements - <a>, <img>, <input>, <span>
+      1. inline elements - <a>, <img>, <input>, <span>, <label>
 	  2. block level elments - other than inline elements all are block level elements
    
       inside inline element we should not use block level elements.
@@ -176,8 +330,8 @@ ex. <h1> some heading </h1>
 	 
 	li - list item
 	
-	style -- list-style-type - by default disc for the ul.
-	style -- list-style-type - by default numeric for the ol.
+	style -- list-style-type - by default disc for the ul. ex. disc, square, none
+	style -- list-style-type - by default numeric for the ol. ex. 1, a, A, I
 	
    
 -->

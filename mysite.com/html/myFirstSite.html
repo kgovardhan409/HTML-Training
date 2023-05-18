@@ -258,19 +258,79 @@
 		</table>
 		
 		<h1>Forms</h1>
-		<form>
+		<form action="/submit.php" method="post">
+		
+		<!--
+			1. get - it is not secure as we are sending data through the url
+			2. post - it is secure as we are not sending data through the url
+		-->
+		<div>
 			<label>User Name:</label>
-			<input type="text">
-			<hr>
+			<input type="text" name="userName" required value="kgovardhan409@gmail.com">
+		</div>
+		
+		<div>
 			
-			<label>Choose Gender</lable>
+			<label>Choose Gender: </lable>
 			
 			<label>Male</lable>
-			<input type="radio" name="gender">
+			<input type="radio" name="gender" >
 			
 			<label>Female</label>
-			<input type="radio" name="gender">
+			<input type="radio" name="gender" >
+		</div>
+		
+		<div>
+			<label>Rating</label>
 			
+			<label>Good</label>
+			<input type="checkbox" >
+			
+			<label>Average</label>
+			<input type="checkbox" >
+		</div>
+		
+		
+		<div>
+		
+			<label>Availabe Timing</label>
+			<select>
+				<option disabled="true" selected="true">Choose</option>
+				<option>Morning</option>
+				<option>Afternoon</option>
+				<option>Night</option>
+			</select>
+		</div>
+		
+		<div>
+			<label>Password:</label>
+			<input type="password">
+		
+		</div>
+		
+		<div>
+			<label>Email:</label>
+			<input type="email" required>
+		
+		</div>
+		
+		<div>
+			<label>Phone:</label>
+			<input type="tel" required> <!-- we will do valiation is javascript -->
+		
+		</div>
+		
+		<div>
+			<label>choose money:</label>
+			<input type="range" value="100" min="10" max="1000">
+		</div>
+		
+		<div>
+		
+			<input type="button" value="button"> <!-- we should not use this for sumitting the form, we can use it for upload, click, etc... --> 
+			<input type="submit" value="send data"> 
+		</div>
+		
 		</form>
 		
 		
@@ -333,5 +393,14 @@ ex. <h1> some heading </h1>
 	style -- list-style-type - by default disc for the ul. ex. disc, square, none
 	style -- list-style-type - by default numeric for the ol. ex. 1, a, A, I
 	
+	
+	HTML 5 Features --
+	
+	Semantic tags.. - by seeing the name itself we can understand what is this element for.
+	
+	they are new input types -- password, email, phone, range, etc...
+	
+	HTML 5 -- new elements -- small project html
+	Css - 
    
 -->
